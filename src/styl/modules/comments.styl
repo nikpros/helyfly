@@ -1,0 +1,36 @@
+.comments
+    width 60%
+    margin-top 8em
+    @media screen and (max-width: $desktopWidth) and (min-width: $tableWidth)
+        width 90%
+    @media screen and (max-width: $tableWidth)
+        width 100%
+.comments__item__user-name
+    font-weight 500
+    line-height 22px
+.comments__item__star-mark
+    display inline-block
+    img
+        margin-right .2em
+.comments__item__text-mark
+    display inline-block
+    // margin-left 3em
+.comments__item__text
+    margin-left 19%
+    @media screen and (max-width: $desktopWidth) and (min-width: $smDesktopWidth)
+        margin-left 15%
+    @media screen and (max-width: $tableWidth)
+        margin-left 0
+.comments__item__message
+    font-size 16px
+.comments__item__date
+    font-size 14px
+    color $neutral-regular
+.comments__show-more
+    color $primary-color
+    cursor pointer
+    display inline-block
+    position absolute
+    right 35%
+.hide
+    display none !important

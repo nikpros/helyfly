@@ -1,0 +1,63 @@
+
+
+.head-banner
+    background url(/assets/images/helimain.png) no-repeat center center
+    height 840px
+    background-size cover
+    color $default-color
+    margin 0 -15px
+    position relative
+.head-banner-block
+    position absolute
+    top 34%
+    left 20%
+    @media screen and (max-width: $desktopWidth)
+        left 5%
+    .reserve
+        position absolute
+        transform: translateY(6.5em)
+        font-weight bold
+        border 3px solid $default-color
+        border-radius 3px
+        box-shadow 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
+        box-sizing border-box
+        padding 1em 3em
+        cursor pointer
+.head-banner__text
+
+    & span 
+        color $main-color
+
+.popover__content
+    img 
+        position absolute
+        right 0
+        @media screen and (max-width: $desktopWidth)
+            heigth 61px
+            width 61px
+    position absolute
+    transform translate(0, 10px)
+    background-color $main-color
+    padding 5px 4em 5px 1.5em
+    box-shadow 0 4px 4px rgba(0, 0, 0, 0.1)
+    width auto
+    border-radius 5px
+
+    &:before 
+        position absolute
+        z-index -1
+        content ""
+        right calc(40% - 10px)
+        top -8px
+        border-style solid
+        border-width 0 10px 10px 10px
+        border-color transparent transparent $main-color transparent
+        transform: rotate(180deg) translateY(-5em)
+.popover__message
+        position relative
+        line-height 1.9em
+	span 
+		font-size 2rem
+		font-weight 700
+
+

@@ -1,0 +1,32 @@
+@import "utils/vars.styl"
+@import "utils/mixins.styl"
+@import "utils/fonts.styl"
+
+@import "modules/header.styl"
+@import "modules/helimain.styl"
+@import "modules/about.styl"
+@import "modules/gallery.styl"
+@import "modules/org.styl"
+@import "modules/action.styl"
+@import "modules/map.styl"
+@import "modules/comments.styl"
+@import "modules/footer.styl"
+
+html
+  line-height: $mainLineHeight
+  font-size: $mainFontSize
+  color: $mainFontColor
+  height: 100%
+  @media screen and (max-width: $desktopWidth)
+    font-size: 16px
+  @media screen and (max-width: $tableWidth)
+    font-size: 15px
+  @media screen and (max-width: $phoneWidth)
+    font-size: 14px
+
+body
+    font-family: Montserrat !important
+
+.text-muted
+    font-size 14px
+    color $neutral-regular

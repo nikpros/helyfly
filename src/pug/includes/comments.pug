@@ -1,0 +1,121 @@
+section.container
+    .comments
+        h5 Отзывы:
+        .comments__item.row.mt-5
+            .col-auto
+                img.img-fluid(src="/assets/images/avatar_2.png")
+            .col.col-md-auto
+                p.comments__item__user-name Валерия Антонова
+                p Арт-директор
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+            .col-12.col-md.d-flex.align-items-end
+                p.comments__item__text-mark.text-muted.mt-3
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+        .row
+            .col.comments__item__text
+                p.comments__item__message
+                    |Хотим выразить огромную благодарность вашей компании! Получили море ощущений,
+                    | все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+                p.comments__item__date.text-muted
+                    | 27 Апреля, 2019г.
+                hr
+        .comments__item.row.mt-5
+            .col-auto
+                img(src="/assets/images/avatar_3.png")
+            .col
+                p.comments__item__user-name Виталий Петров
+                p Фотограф
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+                p.comments__item__text-mark.text-muted
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+                p.comments__item__message
+                    | Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :)
+                    | Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!
+                p.comments__item__date.text-muted
+                    | 19 Апреля, 2019г.
+                hr
+        .comments__item.row.mt-5
+            .col-auto
+                img(src="/assets/images/avatar_4.png")
+            .col
+                p.comments__item__user-name Джим Керри
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+                p.comments__item__text-mark.text-muted
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+                p.comments__item__message
+                    | Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и
+                    | сытными))Мы с собой ничего не брали. Сами много фоткались, поэтому воспоминания обалденные!!!))
+                    | А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним
+                    | съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+                p.comments__item__date.text-muted
+                    | 11 Апреля, 2019г.
+                hr
+        p.comments__show-more.mt-4
+            img.mr-2(src="/assets/images/arrow.svg")
+            | Показать Все
+            img.ml-2(src="/assets/images/arrow.svg")
+        // split //
+        .comments__item.row.mt-5.hide
+            .col-auto
+                img(src="/assets/images/avatar_4.png")
+            .col
+                p.comments__item__user-name Джим Керри
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+                p.comments__item__text-mark.text-muted
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+                p.comments__item__message
+                    | Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и
+                    | сытными))Мы с собой ничего не брали. Сами много фоткались, поэтому воспоминания обалденные!!!))
+                    | А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним
+                    | съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
+                p.comments__item__date.text-muted
+                    | 11 Апреля, 2019г.
+                hr
+        .comments__item.row.mt-5.hide
+            .col-auto
+                img(src="/assets/images/avatar_3.png")
+            .col
+                p.comments__item__user-name Виталий Петров
+                p Фотограф
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+                p.comments__item__text-mark.text-muted
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+                p.comments__item__message
+                    | Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :)
+                    | Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!
+                p.comments__item__date.text-muted
+                    | 19 Апреля, 2019г.
+                hr
+        .comments__item.row.mt-5.hide
+            .col-auto
+                img(src="/assets/images/avatar_2.png")
+            .col
+                p.comments__item__user-name Валерия Антонова
+                p Арт-директор
+                p.comments__item__star-mark
+                    - for (let x = 0; x < 5; x++)
+                        img(src="/assets/images/star.svg")
+                p.comments__item__text-mark.text-muted
+                    img(src="/assets/images/check-on.svg")
+                    | Супер! Я бы заказла съемку снова!
+                p.comments__item__message
+                    |Хотим выразить огромную благодарность вашей компании! Получили море ощущений,
+                    | все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+                p.comments__item__date.text-muted
+                    | 27 Апреля, 2019г.
+                hr

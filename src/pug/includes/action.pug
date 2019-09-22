@@ -1,0 +1,45 @@
+section.action.container.my-5
+    h4 Доступная съемка
+        br
+        | в ближайшее время
+    table.action-block.mt-4
+            tr
+                td
+                    .row
+                        .col.text-center.text-md-left
+                            p Пятница, 14 сентября
+                                img.ml-3.datapicker.d-none.d-md-block(src="/assets/images/calendar.svg")
+            tr
+                td
+                    .row
+                        .col-12.col-md-8
+                            p 15:00 - 18:00
+                            p(style="font-weight: 600") 1500&#8381;
+                            p Осталось &#8212; 1 место
+                        .col-12.col-md-4.text-left.text-md-right
+                            p.action-block__select Выбрать
+            tr
+                td
+                    .row
+                        .col-12.col-md-8
+                            p 19:00 - 22:00
+                            p(style="font-weight: 600") 1500&#8381;
+                            p Осталось &#8212; 1 место
+                        .col-12.col-md-4.text-left.text-md-right
+                            p.action-block__select Выбрать
+                    .row.d-none.d-md-flex
+                        .col
+                            p
+                                img.pr-3(src="/assets/images/cup.svg")
+                                | Более 50 отзывов с оценкой
+                                - for (let x = 0; x < 5; x++)
+                                    img.star.ml-2(src="/assets/images/star.svg")
+            tr.d-table-cell.d-md-none
+                td
+                    .row
+                        .col
+                            p
+                                img.pr-3(src="/assets/images/cup.svg")
+                                | Более 50 отзывов с оценкой
+                                - for (let x = 0; x < 5; x++)
+                                    img.star.ml-2(src="/assets/images/star.svg")
